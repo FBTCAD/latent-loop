@@ -1,5 +1,5 @@
 """
-HTML Calculator - Latent Loop v4: Fresh Instances Version
+HTML Calculator - Latent Loop: Fresh Instances Version
 ==========================================================
 
 Features:
@@ -14,7 +14,7 @@ Key Changes (instances version):
 - FRESH CONTEXT PER CALL: Each LLM call uses a new model handle and Chat instance
 - NO MODEL REUSE: Eliminates any possible KV cache bleeding between phases
 - EXPLICIT ISOLATION: Only the ReasoningState JSON carries between phases
-- All v4 improvements retained (WRITE/SEARCH/BLOCKER pattern)
+- All improvements retained (WRITE/SEARCH/BLOCKER pattern)
 
 This version exists to TEST whether fresh instances improve results compared
 to reusing a single model handle. The hypothesis is that fresh instances
