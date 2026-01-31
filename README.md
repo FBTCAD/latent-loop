@@ -1,8 +1,8 @@
-# Latent Loop V4: Iterative LLM Code Generation
+# Latent Loop: Iterative LLM Code Generation
 
 > **"The schema is the new prompt."**
 
-Latent Loop V4 is a single-file implementation of iterative LLM inference for code generation. Instead of one-shot generation, it forces the model to externalize reasoning into structured JSON, refine it iteratively, then generate code from a verified specification.
+Latent Loop is a single-file implementation of iterative LLM inference for code generation. Instead of one-shot generation, it forces the model to externalize reasoning into structured JSON, refine it iteratively, then generate code from a verified specification.
 
 ## The Problem
 
@@ -78,7 +78,7 @@ state = ReasoningState(**result.parsed)  # Guaranteed valid!
 ### Requirements
 
 ```bash
-pip install pydantic lmstudio-sdk
+pip install pydantic lmstudio
 ```
 
 ### LM Studio Setup
@@ -90,7 +90,7 @@ pip install pydantic lmstudio-sdk
 ## Usage
 
 ```bash
-python promptlong_instances_latent_v4.py
+python latent_loop.py
 ```
 
 ### Output Structure
